@@ -1,0 +1,24 @@
+{
+  "name": "typescript-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "greeter.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wen0720/typescript-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wen0720/typescript-test/issues"
+  },
+  "homepage": "https://github.com/wen0720/typescript-test#readme"
+}

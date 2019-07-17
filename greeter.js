@@ -1,3 +1,4 @@
+"use strict";
 var Student = /** @class */ (function () {
     function Student(firstName, middleInitial, lastName) {
         this.firstName = firstName;
@@ -11,8 +12,8 @@ function greeterFuc(person) {
     return "Hello, " + person.firstName + person.lastName;
 }
 var user = new Student('Chen', 'Wen', 'Shian');
-document.body.innerHTML = greeterFuc(user);
-//==============    ===//
+// document.body.innerHTML = greeterFuc(user);
+//=================//
 // Array 
 var list = [1, 2, 3];
 var list2 = [1, 2, 3];
@@ -36,3 +37,25 @@ var person = {
 var fibonacci = [1, 1, 2, 3, 5];
 var arr = [1, 2, 3, 4, 5];
 var txtNumArr = [1, '2', 3, '5', 9];
+function reverse(arr) {
+    var toreturn = [];
+    for (var i = arr.length - 1; i >= 0; i--) {
+        toreturn.push(arr[i]);
+    }
+    return toreturn;
+}
+var testArr = reverse([1, 2, 3]);
+console.log(testArr);
+console.log(testArr[0]);
+var Utility;
+(function (Utility) {
+    function bark() {
+        console.log('bark!!!!!');
+    }
+    Utility.bark = bark;
+    function stop() {
+        console.log('stop');
+    }
+})(Utility || (Utility = {}));
+Utility.bark();
+console.log(Utility);
