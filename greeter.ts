@@ -20,7 +20,7 @@ let user = new Student('Chen', 'Wen', 'Shian');
 
 //=================//
 
-// Array 
+// Array
 let list: Array<number> = [1, 2, 3];
 let list2: number[] = [1, 2, 3];
 
@@ -85,3 +85,35 @@ namespace Utility {
 
 Utility.bark()
 console.log(Utility)
+
+
+// 這樣會強制陣列只能有 2 個元素
+let tuple: [string, number]
+tuple = ['xxxx', 6]
+console.log(tuple[0])
+
+// enum
+
+enum Color {Red, Green, Blue}
+let c: Color = Color.Green
+console.log(c)
+
+// undefined null
+let u: undefined = undefined
+let n: null = null
+
+// 在非嚴格模式下，
+// 就算變數已被定義為其他型別
+// 仍可被 assign 為 null 和 undefined
+let ff: number = 5
+ff = null
+
+// void 定義 function 的回傳值，代表無回傳值
+function gogo(): void{
+    console.log('void')
+}
+
+// never 定義一個可能 永遠不會回傳 或 拋出錯誤 的 function 回傳值
+function nono(): never{
+    throw new Error('oh!!!!!!!!!')
+}

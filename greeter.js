@@ -1,4 +1,3 @@
-"use strict";
 var Student = /** @class */ (function () {
     function Student(firstName, middleInitial, lastName) {
         this.firstName = firstName;
@@ -14,7 +13,7 @@ function greeterFuc(person) {
 var user = new Student('Chen', 'Wen', 'Shian');
 // document.body.innerHTML = greeterFuc(user);
 //=================//
-// Array 
+// Array
 var list = [1, 2, 3];
 var list2 = [1, 2, 3];
 // number
@@ -59,3 +58,17 @@ var Utility;
 })(Utility || (Utility = {}));
 Utility.bark();
 console.log(Utility);
+// 這樣會強制陣列只能有 2 個元素
+var tuple;
+tuple = ['xxxx', 6];
+console.log(tuple[0]);
+// enum
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 0] = "Red";
+    Color[Color["Green"] = 1] = "Green";
+    Color[Color["Blue"] = 2] = "Blue";
+})(Color || (Color = {}));
+var c = Color.Green;
+console.log(c);
+console.log(Color)
